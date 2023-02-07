@@ -92,38 +92,53 @@ html, body {
 }
 
 img {
-    padding-top: 11.75px;
-    padding-right: 13px;
     height: 90px;
     width: 90px;
-    float: right;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(1570%, -50%);
 }
 
 h1 {
     white-space: pre;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    width: 132px;
+    min-height: 40px;
+    flex: 50%;
+    flex-wrap: wrap; 
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+    font-size: 18px;
+}
+
+#firstcol {
+    border-top: 2px solid red;
+}
+
 #wrap {min-height: 100%;}
 
 #main {
     overflow:auto;
-	padding-bottom: 150px;
+	padding-bottom: 200px;
 }  /* must be same height as the footer */
+
 #footer {
     position: relative;
-	margin-top: -150px; /* negative value of footer height */
-	height: 150px;
+	margin-top: -200px; /* negative value of footer height */
+	height: 200px;
 	clear:both;
     background-color: blanchedalmond;
 } 
-/*Opera Fix*/
-body:before {
-	content:"";
-	height:100%;
-	float:left;
-	width:0;
-	margin-top:-32767px;/
-}
+
 
 
 #box {
@@ -144,6 +159,16 @@ body:before {
     border-left: 2px solid #ECCD3E;
     position: absolute;
     height: 47px;
+}
+
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
 }
 /* ==========================================================================
    Helper classes
