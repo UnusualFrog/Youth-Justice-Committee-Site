@@ -104,8 +104,11 @@ h1 {
     white-space: pre;
 }
 
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .column {
-    display: flex;
     flex-direction: column;
 }
 
@@ -114,21 +117,25 @@ h1 {
     min-height: 40px;
     flex: 50%;
     flex-wrap: wrap; 
-    border-left: 2px solid red;
-    border-right: 2px solid red;
-    border-bottom: 2px solid red;
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    border-bottom: 2px solid green;
     font-size: 18px;
+    background-color:whitesmoke;
 }
 
 #firstcol {
-    border-top: 2px solid red;
+    border-top: 2px solid green;
 }
 
 #wrap {min-height: 100%;}
 
 #main {
+    display: flex;
+    column-gap: 27px;
     overflow:auto;
 	padding-bottom: 200px;
+    background-color: aqua;
 }  /* must be same height as the footer */
 
 #footer {
